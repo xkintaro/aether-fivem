@@ -68,7 +68,7 @@ Dashboard stat cards showing at a glance:
 ### Frontend
 - **[React 19](https://react.dev/)**
 - **[Vite 7](https://vitejs.dev/)**
-- **[Tailwind CSS v4](https://tailwindcss.com/)**:
+- **[Tailwind CSS v4](https://tailwindcss.com/)**
 - **[Axios](https://axios-http.com/)**
 
 ### Backend
