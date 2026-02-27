@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+    --color-glitch-bg: #0a0a0f;
+    --color-glitch-surface: #12121a;
+    --color-glitch-card: #16161f;
+    --color-glitch-border: #1e1e2e;
+    --color-glitch-border-hover: #2a2a3e;
+    --color-glitch-cyan: #00f0ff;
+    --color-glitch-cyan-dim: #00a5b0;
+    --color-glitch-magenta: #ff00aa;
+    --color-glitch-magenta-dim: #b0006e;
+    --color-glitch-lime: #b4ff39;
+    --color-glitch-amber: #ffb300;
+    --color-glitch-red: #ff3355;
+    --color-glitch-text: #e0e0ec;
+    --color-glitch-text-dim: #6a6a80;
+    --color-glitch-text-muted: #3a3a50;
+    --font-display: "Orbitron", sans-serif;
+    --font-body: "Rajdhani", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-glitch-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-glitch-border-hover);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-glitch-cyan-dim);
+}
+
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes scan-line {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes float-up {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+@keyframes glitch-clip {
+    0% {
+        clip-path: inset(40% 0 61% 0);
+    }
+
+    20% {
+        clip-path: inset(92% 0 1% 0);
+    }
+
+    40% {
+        clip-path: inset(43% 0 1% 0);
+    }
+
+    60% {
+        clip-path: inset(25% 0 58% 0);
+    }
+
+    80% {
+        clip-path: inset(54% 0 7% 0);
+    }
+
+    100% {
+        clip-path: inset(58% 0 43% 0);
+    }
+}
+
+@keyframes border-rotate {
+    to {
+        --angle: 360deg;
+    }
+}
